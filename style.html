@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#001f3f,#0074D9);
+    color:white;
+    text-align:center;
+}
+
+header{
+    background: rgba(0,0,0,0.6);
+    padding:15px;
+    backdrop-filter: blur(10px);
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+header img{
+    width:140px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow{
+    from{ filter: drop-shadow(0 0 5px #fff);}
+    to{ filter: drop-shadow(0 0 25px #00ffff);}
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+}
+
+.container{
+    padding:40px 20px;
+}
+
+.big-img{
+    width:350px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    margin:20px 0;
+}
+
+button{
+    padding:12px 30px;
+    margin:10px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,#00ffff,#0074D9);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00ffff;
+}
+
+.login-box{
+    background: rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:20px;
+    width:300px;
+    margin:auto;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-radius:20px;
+    text-align:center;
+}
+
+.info-box{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:20px;
+    width:80%;
+    margin:20px auto;
+}
