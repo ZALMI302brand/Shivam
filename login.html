@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="ss.jpg">
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<div class="container">
+    <img src="sk.jpg" class="big-img">
+
+    <div class="login-box">
+        <h2>Student Login</h2>
+        <input type="text" id="userid" placeholder="Student ID">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+</div>
+
+<script>
+function login(){
+    var id=document.getElementById("userid").value;
+    var pass=document.getElementById("password").value;
+
+    if(id=="shivam728080" && pass=="shivam@@"){
+        window.location="student.html";
+    }else{
+        alert("Wrong ID or Password");
+    }
+}
+</script>
+
+</body>
+</html>
